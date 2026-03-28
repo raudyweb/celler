@@ -12,12 +12,11 @@ const Navbar = () => {
   }, []);
 
   const links = [
-    { href: "#nosotros", label: "Nosotros" },
-    { href: "#platos", label: "Platos" },
-    { href: "#opiniones", label: "Opiniones" },
-    { href: "#contacto", label: "Contacto" },
-  ];
-
+  { href: "#nosotros", label: "Nosotros" },
+  { href: "#menu", label: "Menú" },
+  { href: "#opiniones", label: "Opiniones" },
+  { href: "#contacto", label: "Contacto" },
+ ];
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
