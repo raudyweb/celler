@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Lato:wght@300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 25% 96%;
+    --foreground: 20 15% 15%;
+
+    --card: 35 30% 94%;
+    --card-foreground: 20 15% 15%;
+
+    --popover: 30 25% 96%;
+    --popover-foreground: 20 15% 15%;
+
+    --primary: 348 55% 28%;
+    --primary-foreground: 35 40% 95%;
+
+    --secondary: 30 30% 85%;
+    --secondary-foreground: 20 15% 15%;
+
+    --muted: 30 20% 90%;
+    --muted-foreground: 20 10% 45%;
+
+    --accent: 40 50% 55%;
+    --accent-foreground: 20 15% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 30 20% 82%;
+    --input: 30 20% 82%;
+    --ring: 348 55% 28%;
+
+    --radius: 0.5rem;
+
+    --wine: 348 55% 28%;
+    --wine-light: 348 40% 40%;
+    --cream: 35 40% 95%;
+    --wood: 25 35% 35%;
+    --wood-light: 30 30% 55%;
+    --gold: 40 60% 50%;
+    --gold-light: 42 55% 70%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+     overflow-x: hidden;  /* ← añadir esto */
+  }
+  html {
+  overflow-x: hidden;  /* ← añadir esto */
+}
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
